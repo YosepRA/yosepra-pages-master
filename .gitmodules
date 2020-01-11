@@ -1,0 +1,3 @@
+[submodule "yosepra.github.io"]
+	path = yosepra.github.io
+	url = git@github.com:YosepRA/yosepra.github.io.git
