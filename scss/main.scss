@@ -137,6 +137,15 @@ body {
   }
 }
 
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-family: 'Brush King';
+  }
+}
+
 .page-footer {
   position: relative;
   width: 100%;
@@ -190,11 +199,6 @@ body {
   }
 }
 
-.page-header {
-  text-align: center;
-  margin-bottom: 0.8rem;
-
-  h1 {
-    font-family: 'Brush King';
-  }
+.page-section {
+  margin-bottom: 4rem;
 }

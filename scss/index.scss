@@ -1,6 +1,7 @@
 @import 'config';
 
 body {
+  padding: 0;
   overflow: hidden;
 }
 
@@ -70,7 +71,6 @@ body {
       }
 
       &:hover {
-        // background-color: darken($beige, 5);
         background-color: $beige-dark1;
 
         .link-text {
@@ -79,8 +79,7 @@ body {
       }
 
       &:active {
-        // background-color: darken($beige, 10);
-        background-color: $beige-dark-2;
+        background-color: $beige-dark2;
       }
     }
   }
