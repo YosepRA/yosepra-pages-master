@@ -1,9 +1,13 @@
 @import 'config';
 
 .section-title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   h2 {
+    width: 160px;
+    margin: auto;
+    padding: 0.4rem 0;
+    border-bottom: 3px solid $brown;
     color: $brown;
     font-weight: normal;
     font-size: 3rem;
@@ -97,7 +101,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;

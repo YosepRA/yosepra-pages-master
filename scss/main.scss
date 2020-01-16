@@ -27,6 +27,7 @@ body {
   margin: 0 auto;
 }
 
+// Main navigation bar.
 .mainNav {
   position: fixed;
   z-index: 10;
@@ -37,9 +38,10 @@ body {
   background-color: $beige;
 
   // Brown background for menus.
-  &:after {
+  &:before {
     display: block;
     position: absolute;
+    z-index: -1;
     top: 0;
     right: 0;
     width: 55%;
@@ -50,7 +52,7 @@ body {
   }
 
   .container {
-    position: relative;
+    // position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -135,6 +137,10 @@ body {
       }
     }
   }
+
+  &-menuToggle {
+    display: none;
+  }
 }
 
 .page-header {
@@ -202,3 +208,5 @@ body {
 .page-section {
   margin-bottom: 4rem;
 }
+
+@import 'mobile';

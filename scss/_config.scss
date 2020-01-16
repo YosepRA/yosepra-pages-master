@@ -7,3 +7,32 @@ $beige-dark2: #ccc796;
   font-family: 'Brush King';
   src: local('Brush King'), url('../fonts/brush-king.otf') format('opentype');
 }
+
+// Media query mixins
+// Smartphone
+@mixin mediaSm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+// Tablet
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Small desktop & laptop.
+@mixin mediaLg {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+// Widescreen.
+@mixin mediaXl {
+  @media screen and (max-width: 1171px) {
+    @content;
+  }
+}
