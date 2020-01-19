@@ -37,6 +37,14 @@
     }
   }
 
+  body#about {
+    .control-bottom {
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+
   body#projects {
     .tags {
       .tag {
@@ -176,6 +184,55 @@
     }
   }
 
+  body#home {
+    .links {
+      a {
+        font-size: 3.4rem;
+      }
+    }
+
+    .brand-logo {
+      width: 70%;
+    }
+  }
+
+  body#about {
+    .item-wrapper {
+      flex-direction: column;
+    }
+
+    .content {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+
+    .image {
+      width: 40%;
+    }
+
+    .carousel-controls {
+      .side-control {
+        opacity: 1;
+        background-color: rgba(#ccc, 0.5);
+      }
+    }
+
+    .express {
+      .image {
+        margin-top: 2rem;
+      }
+    }
+
+    .mongodb {
+      .image {
+        margin-top: 1rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   body#contact {
     .card {
       &-image {
@@ -239,6 +296,87 @@
     width: 90%;
   }
 
+  body#home {
+    .links {
+      a {
+        font-size: 2.6rem;
+
+        &.projects {
+          .link-text {
+            top: 12%;
+          }
+        }
+
+        &.contact {
+          .link-text {
+            bottom: 12%;
+          }
+        }
+      }
+    }
+  }
+
+  body#about {
+    .section-title {
+      margin-bottom: 1.4rem;
+
+      h2 {
+        width: 120px;
+        font-size: 2.5rem;
+        padding: 0.1rem 0;
+      }
+    }
+
+    .carousel {
+      height: 540px;
+    }
+
+    .content {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+
+    .skill-name {
+      padding: 0.3rem;
+      margin-bottom: 0.6rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+    }
+
+    .skill-description {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .image {
+      width: 60%;
+    }
+
+    .carousel-controls {
+      .side-control {
+        width: 30px;
+
+        &:before {
+          left: -7px;
+        }
+
+        &.control-right {
+          &:before {
+            left: 0;
+          }
+        }
+      }
+
+      .control-bottom {
+        li {
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+
   body#projects {
     .projects {
       grid-template-columns: 100%;
@@ -267,6 +405,12 @@
     .card {
       &-image {
         width: 80%;
+      }
+    }
+
+    .contact {
+      &-text {
+        font-size: 1.1rem;
       }
     }
   }
