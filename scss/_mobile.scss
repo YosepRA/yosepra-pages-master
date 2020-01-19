@@ -1,3 +1,31 @@
+@include mediaXl {
+  body#contact {
+    .card {
+      &-title {
+        font-size: 0.9rem;
+      }
+
+      .details-header {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  body#projects {
+    .project {
+      .content-header {
+        h2 {
+          font-size: 1.1rem;
+        }
+
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
 @include mediaLg {
   .mainNav {
     .nav-link {
@@ -5,6 +33,24 @@
 
       &:after {
         height: 2px;
+      }
+    }
+  }
+
+  body#projects {
+    .tags {
+      .tag {
+        flex: 1 1 110px;
+        max-width: 110px;
+        margin: 0 6px 6px;
+      }
+    }
+
+    .project {
+      .content-header {
+        h2 {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -42,6 +88,7 @@
         border: 1px solid rgba($beige, 0.3);
         font-size: 1rem;
         line-height: 40px;
+        transition: background 200ms ease-out;
 
         &:hover::after,
         &.active::after {
@@ -125,6 +172,101 @@
           visibility: visible;
           transform: translateY(0);
         }
+      }
+    }
+  }
+
+  body#contact {
+    .card {
+      &-image {
+        width: 60%;
+      }
+    }
+
+    .contact {
+      width: 100%;
+      height: 60px;
+
+      &-logo {
+        width: 20%;
+      }
+
+      &-text {
+        font-size: 1.2rem;
+        line-height: 60px;
+      }
+
+      .copyBtn {
+        width: 15%;
+        font-size: 0.8rem;
+      }
+
+      &.copied .contact-text {
+        &:before {
+          left: calc(100% + 10px);
+          width: 20px;
+          height: 20px;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  body#projects {
+    .project {
+      .content-header {
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+
+      &-showDetailBtn {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  .container {
+    width: 90%;
+  }
+
+  body#projects {
+    .projects {
+      grid-template-columns: 100%;
+    }
+
+    .project {
+      .content-header {
+        h2 {
+          font-size: 0.8rem;
+        }
+
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+
+      .content-text {
+        p {
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+  }
+
+  body#contact {
+    .card {
+      &-image {
+        width: 80%;
       }
     }
   }

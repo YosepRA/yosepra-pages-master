@@ -23,14 +23,14 @@ $beige-dark2: #ccc796;
   }
 }
 
-// Small desktop & laptop.
+// Small laptop.
 @mixin mediaLg {
   @media screen and (max-width: 992px) {
     @content;
   }
 }
 
-// Widescreen.
+// Small desktop and bigger laptop.
 @mixin mediaXl {
   @media screen and (max-width: 1171px) {
     @content;
